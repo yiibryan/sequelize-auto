@@ -16,7 +16,7 @@ You will need to install the correct dialect binding globally before using seque
 
 Example for MySQL/MariaDB
 
-`npm install -g mysql`
+`npm install -g mysql2`
 
 Example for Postgres
 
@@ -24,7 +24,7 @@ Example for Postgres
 
 Example for Sqlite3
 
-`npm install -g sqlite`
+`npm install -g sqlite3`
 
 Example for MSSQL
 

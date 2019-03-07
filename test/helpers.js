@@ -1,9 +1,11 @@
 var Sequelize = require('sequelize')
   , path      = require('path')
   , config    = require(path.join(__dirname, "config"))
-  , fs        = require('fs');
+  , fs        = require('fs')
+  , _         = require('lodash');
 
 module.exports = {
+  _: _,
   Sequelize: Sequelize,
 
   initTests: function(options) {
