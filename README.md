@@ -6,6 +6,9 @@
 
 Automatically generate models for [SequelizeJS](https://github.com/sequelize/sequelize) via the command line.
 
+Cover by yiibryan
+https://github.com/yiibryan/sequelize-auto.git
+
 ## Install
 
     npm install -g sequelize-auto
@@ -33,7 +36,7 @@ Example for MSSQL
 ## Usage
 
     [node] sequelize-auto -h <host> -d <database> -u <user> -x [password] -p [port]  --dialect [dialect] -c [/path/to/config] -o [/path/to/models] -t [tableName] -C
-
+    
     Options:
       -h, --host        IP/Hostname for the database.   [required]
       -d, --database    Database name.                  [required]
@@ -50,6 +53,7 @@ Example for MSSQL
       -n, --no-write    Prevent writing the models to disk.
       -s, --schema      Database schema from which to retrieve tables
       -z, --typescript  Output models as typescript with a definitions file.
+      -l, --es6			Output models as ES6 with a definitions file.
 
 ## Example
 
@@ -58,7 +62,7 @@ Example for MSSQL
 Produces a file/files such as ./models/Users.js which looks like:
 
     /* jshint indent: 2 */
-
+    
     module.exports = function(sequelize, DataTypes) {
       return sequelize.define('Users', {
         'id': {
@@ -172,16 +176,16 @@ You must setup a database called `sequelize_auto_test` first, edit the `test/con
 
     # for all
     npm run test
-
+    
     # mysql only
     npm run test-mysql
-
+    
     # postgres only
     npm run test-postgres
-
+    
     # postgres native only
     npm run test-postgres-native
-
+    
     # sqlite only
     npm run test-sqlite
 
