@@ -11,7 +11,6 @@ var _ = helpers._;
 describe(helpers.getTestDialectTeaser("sequelize-auto"), function() {
   after(function(done) {
     helpers.clearDatabase(this.sequelize, done);
-    // done();
   });
 
   before(function(done) {
